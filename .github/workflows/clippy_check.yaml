@@ -25,3 +25,5 @@ jobs:
       - uses: Swatinem/rust-cache@v2
       - name: Run Clippy
         run: cargo clippy --all-targets --all-features
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v5.0.0
